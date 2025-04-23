@@ -5,45 +5,121 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Shangri-La Beach Resort</title>
   <link rel="stylesheet" href="styles.css" />
-  <link rel="icon" href="assets/favicon.ico" />
-  <script defer src="scripts.js"></script>
+  <link rel="stylesheet" href="stylesHome.css"/>
+  <link rel="icon" href="assets/favicon.png" />
+  <script src="scripts.js"></script>
 </head>
 <body>
+
+  <!-- Navigation Bar -->
   <header>
     <img src="assets/logoo.svg" alt="Shangri-La Logo" class="logo" />
     <nav>
       <a href="index.html">Home</a>
-      <a href="about.html">About</a>
+      <a href="accomodations.html">Accommodations</a>
       <a href="amenities.html">Amenities</a>
       <a href="contact.html">Contact</a>
+      <div class="search">
+      <input type="text" placeholder="Search..">
+      <button type="submit"><img src="assets/search-icon.svg" alt="search icon"></button>
+      </div>
     </nav>
+
+    <div class="weather-box">
+        <h2>Temperature: <span id="temp"></span>°C</h2>
+        <img id="condition" src="" alt="">
+    </div>
+
   </header>
-<button link="booking.html">Book Now!</button>
+
   <main>
-    <section class="hero">
-      <h1>Welcome to Shangri-La Beach Resort</h1>
-      <p>Discover paradise in Cancun, Mexico.</p>
+
+    <div class="wrapper">
+    <!-- Hero Section -->
+    <section class="scroll">
+      
+        <div class="hero hero-text">
+          <h1>Shangri La Beach Resort - Your Dream Getaway</h1>
+          <h2>Escape to Paradise</h2>
+          <h3>Indulge in luxury and breathtaking views at Shangri La Beach Resort.</h3>
+        </div>
+
+        <a href="booking.html" class="book-btn">Book Now</a>
+        <!-- <div class="hero-weather-box">
+            <h1 id="city"></h1>
+            <h2>Temperature: <span id="temp"></span>°C</h2>
+            <h2>Temperature: <span id="temp2"></span>°F</h2>
+            <img id="condition" src="" alt="">
+            <h2 id="time"></h2>
+          </div> -->
+
+      </section>      
+
+    <!-- Amenities Section -->
+<div class="white">
+    <section class="content scroll">
+      <h2>Experience Unforgettable Moments</h2>
+      <ul class="amenities">
+        <li><a href="activities.html"><strong>Private Beach Access</strong> – Step onto our pristine, white-sand beach.</a></li>
+        <li><a href="activities.html"><strong>Infinity Pool</strong> – Relax by our stunning oceanfront infinity pool.</a></li>
+        <li><a href="activities.html"><strong>World-Class Spa</strong> – Rejuvenate your mind and body at our spa.</a></li>
+        <li><a href="dining.html"><strong>Exquisite Dining</strong> – Savor culinary delights at our restaurants.</a></li>
+      </ul>
     </section>
-<div class="weather">
-    <h1 id="city"></h1>
-    <h2>Temperature: <span id="temp"></span>°C</h2>
-    <h2>Temperature: <span id="temp2"></span>°F</h2>
 
-    <img id="condition" src="" alt="">
+    <!-- Rooms Section -->
+    <section class="rooms scroll">
+      <h2 id="ola">Our Luxurious Accommodations</h2>
 
-    <h2 id="time"></h2>
+      <div class="room-section room-section-1">
+        <img src="assets/beach-view-room.png" alt="Ocean View Deluxe Room">
+        <div class="room-info">
+          <h2>Ocean View Deluxe Room</h2>
+          <p>Enjoy stunning ocean views from your private balcony.</p>
+          <a href="suites.html" class="view-btn">View Details</a>
+        </div>
+      </div>
+
+      <div class="room-section room-section-2">
+        <img src="assets/beach-front.png" alt="Beachfront Suite">
+        <div class="room-info">
+          <h2>Beachfront Suite</h2>
+          <p>Step directly onto the sand from your spacious suite.</p>
+          <a href="suites.html" class="view-btn">View Details</a>
+        </div>
+      </div>
+
+      <div class="room-section room-section-3">
+        <img src="assets/garden-room.png" alt="Garden View Family Room">
+        <div class="room-info">
+          <h2>Garden View Family Room</h2>
+          <p>Perfect for families, with ample space and garden views.</p>
+          <a href="suites.html" class="view-btn">View Details</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials scroll">
+      <h2>What Our Guests Are Saying</h2>
+      <blockquote>
+        "Our stay at Shangri La was absolutely perfect! The service was impeccable, and the views were breathtaking."
+        <footer>- Sarah M.</footer>
+      </blockquote>
+      <blockquote>
+        "The beachfront suite was amazing! Waking up to the sound of the waves and stepping right onto the sand was incredible."
+        <footer>- John B.</footer>
+      </blockquote>
+      <a href="testimonials.html" class="book-btn">Read More Testimonials</a>
+    </section>
+    </div>
 </div>
-
-<img src="assets/logo.svg" alt="Shangri-La Logo" width="300px" length="300px" />
-
-    <section class="content">
-      <h2>Relax. Explore. Indulge.</h2>
-      <p>Your dream vacation awaits with beachfront views, fine dining, and world-class amenities.</p>
-    </section>
   </main>
 
+  <!-- Footer -->
   <footer>
     <p>&copy; 2025 Shangri-La Beach Resort</p>
   </footer>
+
 </body>
 </html>

@@ -1,0 +1,158 @@
+body {
+    background: url('assets/beach-huts.png') no-repeat center center fixed;
+    background-size: cover;
+}
+.content{
+    margin-top: 400px;
+}
+.scroll {
+    padding: 100px;
+  }
+  .book-btn {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding: 0.6rem 1.2rem;
+    background-color: #ff6f61;
+    color: white;
+    border-radius: 8px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+  }
+
+  .book-btn:hover {
+    background-color: #e64a3b;
+  }
+
+  .white {
+    background-color: whitesmoke;
+    width: 100%;
+    height: inherit;
+    border-radius: 20px;
+  }
+  li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.3s ease;
+  }
+  
+  li a:hover {
+    color: #ffdd00;
+    transform: scale(1.05);
+  }
+  
+  .view-btn {
+    padding: .3rem .7rem;
+    margin-top: 20px;
+    background-color: #ff6f61;
+    color: white;
+    border-radius: 8px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+  }
+
+  .view-btn:hover {
+    background-color: #e64a3b;
+  }
+  .scroll {
+    padding: 50px;
+  }
+
+  /* Room Section */
+  .rooms {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin: 3rem 0;
+  }
+  
+  .room-section {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(255, 255, 255, 0.95);
+    border-radius: 16px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+  }
+  
+  .room-section:hover {
+    transform: translateY(-5px);
+  }
+  
+  .room-section img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+  }
+  
+  .room-info {
+    padding: 1.5rem;
+    text-align: left;
+  }
+  
+  /* Testimonials */
+  .testimonials {
+    background: rgba(255, 255, 255, 0.85);
+    border-radius: 12px;
+    padding: 2rem;
+    max-width: 800px;
+    margin: 3rem auto;
+    text-align: center;
+  }
+  
+  .testimonials blockquote {
+    font-style: italic;
+    margin: 1rem 0;
+  }
+  
+  .testimonials footer {
+    margin-top: 0.5rem;
+    font-weight: bold;
+  }
+  
+  /* Amenities List */
+  .content ul.amenities {
+    list-style: none;
+    padding: 0;
+    margin-top: 1rem;
+  }
+  
+  .content ul.amenities li {
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+    color: #f0f0f0;
+    background: rgba(0, 0, 0, 0.4);
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+  }
+  
+  /* Media Queries */
+  
+  
+  @media (max-width: 768px) {
+    .room-section {
+      flex-direction: column;
+    }
+  
+    .room-info {
+      text-align: center;
+    }
+  
+    .room-section img {
+      height: 200px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+  
+    .hero-weather-box {
+      font-size: 0.75rem;
+      padding: 0.75rem;
+    }
+  }
+  

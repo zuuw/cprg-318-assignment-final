@@ -1,30 +1,64 @@
-<link rel="stylesheet" href="styles.css" />
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact Us - Shangri La Beach Resort</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="stylesContact.css" />
+  <script src="scripts.js"></script>
+</head>
 <body>
-    <header>
-        <img src="assets/logo.svg" alt="Shangri-La Logo" class="logo" />
-      <nav>
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="amenities.html">Amenities</a>
-        <a href="contact.html">Contact</a>
-      </nav>
-      <div id="weather">Loading weather...</div>
-    </header>
-  
-    <main>
-      <section class="hero">
-        <h1>Contact</h1>
-        <p>Discover paradise in Cancun, Mexico.</p>
-      </section>
-  
-  
-      <section class="content">
-        <h2>Relax. Explore. Indulge.</h2>
-        <p>Your dream vacation awaits with beachfront views, fine dining, and world-class amenities.</p>
-      </section>
-    </main>
-  
-    <footer>
-      <p>&copy; 2025 Shangri-La Beach Resort</p>
-    </footer>
-  </body>
+  <header>
+    <img src="assets/logoo.svg" alt="Shangri-La Logo" class="logo" />
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="accomodations.html">Accommodations</a>
+      <a href="amenities.html">Amenities</a>
+      <a href="contact.html">Contact</a>
+      <div class="search">
+      <input type="text" placeholder="Search..">
+      <button type="submit"><img src="assets/search-icon.svg" alt="search icon"></button>
+      </div>
+    </nav>
+
+    <div class="weather-box">
+        <h2>Temperature: <span id="temp"></span>°C</h2>
+        <img id="condition" src="" alt="">
+    </div>
+
+  </header>
+
+  <main class="contact-container">
+    <h1>Contact Us</h1>
+    <p>Have questions or feedback? We'd love to hear from you!</p>
+
+    <form class="contact-form" action="#" method="post">
+      <div class="form-group">
+        <label for="first-name">First Name</label>
+        <input type="text" id="first-name" name="first-name" required />
+      </div>
+
+      <div class="form-group">
+        <label for="last-name">Last Name</label>
+        <input type="text" id="last-name" name="last-name" required />
+      </div>
+
+      <div class="form-group">
+        <label for="email">Email Address</label>
+        <input type="email" id="email" name="email" required />
+      </div>
+
+      <div class="form-group">
+        <label for="concern">Your Concern</label>
+        <textarea id="concern" name="concern" rows="5" required></textarea>
+      </div>
+
+      <button id="contactSubmit" type="submit">Submit</button>
+    </form>
+  </main>
+  <footer>
+    <p>&copy; 2025 Shangri-La Beach Resort</p>
+  </footer>
+</body>
+</html>

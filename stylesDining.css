@@ -1,0 +1,38 @@
+.container {
+    max-width: 960px;
+    margin: 40px auto;
+    padding: 0 20px;
+  }
+  
+  h1, h2 {
+    color: #006080;
+  }
+  
+  .venue {
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  }
+  
+  .venue h2 {
+    margin-top: 0;
+  }
+  
+  ul {
+    padding-left: 20px;
+  }
+  
+  ul li {
+    margin-bottom: 8px;
+  }
+  
+  footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #e6f1f4;
+    color: #555;
+    font-size: 0.9rem;
+  }
+  
