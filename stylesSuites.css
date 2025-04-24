@@ -3,6 +3,11 @@ body {
   background-size: cover;
 }
 
+.hero {
+  background-color: white;
+  border-radius: 20px;
+}
+
 .container {
     max-width: 1000px;
     margin: 40px auto;

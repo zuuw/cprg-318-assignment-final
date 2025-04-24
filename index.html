@@ -13,17 +13,21 @@
 
   <!-- Navigation Bar -->
   <header>
+   
     <img src="assets/logoo.svg" alt="Shangri-La Logo" class="logo" />
+    
     <nav>
       <a href="index.html">Home</a>
       <a href="accomodations.html">Accommodations</a>
       <a href="amenities.html">Amenities</a>
       <a href="contact.html">Contact</a>
-      <div class="search">
-      <input type="text" placeholder="Search..">
-      <button type="submit"><img src="assets/search-icon.svg" alt="search icon"></button>
-      </div>
     </nav>
+
+        <div class="search-wrapper">
+          <label for="search"></label>
+          <input type="search" id="search">
+          <ul id="suggestions" class="suggestions-list"></ul>
+        </div>
 
     <div class="weather-box">
         <h2>Temperature: <span id="temp"></span>°C</h2>
@@ -62,7 +66,7 @@
       <ul class="amenities">
         <li><a href="activities.html"><strong>Private Beach Access</strong> – Step onto our pristine, white-sand beach.</a></li>
         <li><a href="activities.html"><strong>Infinity Pool</strong> – Relax by our stunning oceanfront infinity pool.</a></li>
-        <li><a href="activities.html"><strong>World-Class Spa</strong> – Rejuvenate your mind and body at our spa.</a></li>
+        <li><a href="spa.html"><strong>World-Class Spa</strong> – Rejuvenate your mind and body at our spa.</a></li>
         <li><a href="dining.html"><strong>Exquisite Dining</strong> – Savor culinary delights at our restaurants.</a></li>
       </ul>
     </section>
@@ -110,7 +114,6 @@
         "The beachfront suite was amazing! Waking up to the sound of the waves and stepping right onto the sand was incredible."
         <footer>- John B.</footer>
       </blockquote>
-      <a href="testimonials.html" class="book-btn">Read More Testimonials</a>
     </section>
     </div>
 </div>

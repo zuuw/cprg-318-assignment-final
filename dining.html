@@ -9,25 +9,29 @@
 <link rel="icon" href="assets/favicon.png" />
 <script src="scripts.js"></script>
 <body>
-    <header>
-        <img src="assets/logoo.svg" alt="Shangri-La Logo" class="logo" />
-        <nav>
-          <a href="index.html">Home</a>
-          <a href="accomodations.html">Accommodations</a>
-          <a href="amenities.html">Amenities</a>
-          <a href="contact.html">Contact</a>
-          <div class="search">
-          <input type="text" placeholder="Search..">
-          <button type="submit"><img src="assets/search-icon.svg" alt="search icon"></button>
-          </div>
-        </nav>
+  <header>
+   
+    <img src="assets/logoo.svg" alt="Shangri-La Logo" class="logo" />
     
-        <div class="weather-box">
-            <h2>Temperature: <span id="temp"></span>°C</h2>
-            <img id="condition" src="" alt="">
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="accomodations.html">Accommodations</a>
+      <a href="amenities.html">Amenities</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+
+        <div class="search-wrapper">
+          <label for="search"></label>
+          <input type="search" id="search">
+          <ul id="suggestions" class="suggestions-list"></ul>
         </div>
-    
-      </header>
+
+    <div class="weather-box">
+        <h2>Temperature: <span id="temp"></span>°C</h2>
+        <img id="condition" src="" alt="">
+    </div>
+
+  </header>
 <main>
 
     <section class="venue">

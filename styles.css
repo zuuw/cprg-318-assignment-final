@@ -35,8 +35,8 @@
   .logo {
     height: 50px;
   }
-
-  .search {
+/* 
+  .search-wrapper {
     appearance: none;
     display: flex;
     justify-content: center;
@@ -47,7 +47,7 @@
     border-radius: 5px;
     font-size: 14px;
   }
-  .search:hover{
+  .search-wrapper:hover{
     appearance: none;
     background: white ;
     padding-left: 0;
@@ -55,11 +55,7 @@
     border: none;
     border-radius: 5px;
     font-size: 14px;
-  }
-  .search img{
-    size: 50px 50px;
-    background-color: white;
-  }
+  } */
   nav {
     display: flex;
     flex-wrap: wrap;
@@ -78,6 +74,40 @@
     color: #ffdd00;
     transform: scale(1.05);
   }
+  #search {
+    appearance: none;
+    background-color: #085883;
+    border: none;
+    border-radius: 10px;
+    height: 20px;
+  }
+
+  .suggestions-list {
+    list-style: none;
+    padding: 0;
+    margin-top: 5px;
+    border: none;
+    border-radius: 5px;
+    max-width: 300px;
+    background: #0077b6;
+    color: white;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    position: absolute;
+    z-index: 1000;
+    display: none;
+  }
+  
+  .suggestions-list li {
+    padding: 10px;
+    cursor: pointer;
+  }
+  
+  .suggestions-list li:hover {
+    background-color: #f0f0f0;
+    border-radius: inherit;
+  }
+  
+
   .weather-box {
     display: flex;
     justify-content: center;
@@ -139,6 +169,7 @@
   footer {
     background: #003049;
     color: white;
+    background-size: 100%;
     text-align: center;
     padding: 1rem;
     margin-top: 2rem;
@@ -158,6 +189,7 @@
   @media (max-width: 768px) {
     header {
       flex-direction: column;
+      justify-content: center;
       text-align: center;
     }
   

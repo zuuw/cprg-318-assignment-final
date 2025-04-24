@@ -11,17 +11,21 @@
 </head>
 <body>
   <header>
+   
     <img src="assets/logoo.svg" alt="Shangri-La Logo" class="logo" />
+    
     <nav>
       <a href="index.html">Home</a>
       <a href="accomodations.html">Accommodations</a>
       <a href="amenities.html">Amenities</a>
       <a href="contact.html">Contact</a>
-      <div class="search">
-      <input type="text" placeholder="Search..">
-      <button type="submit"><img src="assets/search-icon.svg" alt="search icon"></button>
-      </div>
     </nav>
+
+        <div class="search-wrapper">
+          <label for="search"></label>
+          <input type="search" id="search">
+          <ul id="suggestions" class="suggestions-list"></ul>
+        </div>
 
     <div class="weather-box">
         <h2>Temperature: <span id="temp"></span>°C</h2>
@@ -30,7 +34,9 @@
 
   </header>
 
+
   <div class="container">
+    <h1 class="hero">Shangri La Beach Resort - Your Dream Getaway</h1>
 
     <div class="room">
       <h3>Ocean View Deluxe Room</h3>
